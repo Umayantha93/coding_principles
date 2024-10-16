@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    #controller designed using DRY principle
     public function index()
     {
         return response()->json(User::all(), 200);
